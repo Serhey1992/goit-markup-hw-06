@@ -780,14 +780,40 @@ body{
     border-radius: 50%;
     border: 1px solid rgba(0, 0, 0, 0.1);
     cursor: pointer;
+
+    transition: color 250ms cubic-bezier(0.4, 02, 0.2, 1);
 }
 .close-icon {
     width: 18px;
     height: 18px;
+    fill: currentColor;
+}
+.button-close:hover{
+    color: var(--acent-color);
 }
 .is-hidden{
     visibility: hidden;
     opacity: 0;
     pointer-events: none;
+}
+.modal-post{
+    margin-top: 40px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 12px;
+
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 1.15;
+    text-align: center;
+    letter-spacing: 0.03em;
+    
+    color: #212121;
+}
+.fildset{
+    margin-left: auto;
+    margin-right: auto;
+    width: 448px;
+    height: 342px;
 }
 /* Бекдроп та модальне вікно кінець */
