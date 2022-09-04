@@ -392,7 +392,7 @@
             <p class="modal-post">Залиште свої дані, ми вам передзвонимо</p>
             <form class="fildset">
                 <div class="form-field">
-                    <label for="name">Ім'я</label>
+                    <label for="name" class="bottom">Ім'я</label>
                     <input type="text" name="name" id="name">
                     <span class="icon">
                         <svg class="name-icon">
@@ -402,7 +402,7 @@
                 </div>
 
                 <div class="form-field">
-                    <label for="phone">Телефон</label>
+                    <label for="phone" class="bottom">Телефон</label>
                     <input type="tel" name="phone" id="phone">
                     <span class="icon">
                         <svg class="namber-icon">
@@ -412,7 +412,7 @@
                 </div>
 
                 <div class="form-field">
-                    <label for="mail">Пошта</label>
+                    <label for="mail" class="bottom">Пошта</label>
                     <input type="email" name="mail" id="mail">
                     <span class="icon">
                         <svg class="email-icon">
@@ -422,12 +422,15 @@
                 </div>
 
                 <div class="form-feedback">
-                    <label for="feedback">Коментар</label>
+                    <label for="feedback" class="bottom">Коментар</label>
                     <textarea name="feedback" id="feedback" rows="10" placeholder="Введіть текст"></textarea>
                 </div>
                 
-                <label class="checkbox-lable"><input type="checkbox" name="topic">
-                        Погоджуюся з розсилкою та приймаю <a href="">Умови договору</a>
+                <label class="fild">
+                    <input class="checkbox" type="checkbox" name="topic">
+                    <span class="checkbox-icon"></span>
+                    Погоджуюся з розсилкою та приймаю
+                    <a href="">Умови договору</a>
                 </label>
                 
                 <button type="submit" class="field-button">Відправити</button>

@@ -822,6 +822,8 @@ body{
     display: flex;
     flex-direction: column;
     margin-bottom: 10px;
+    font-size: 12px;
+    letter-spacing: 0.01em;
 }
 .form-field label{
     margin-bottom: 4px;
@@ -873,6 +875,12 @@ body{
     display: flex;
     flex-direction: column;
     margin-bottom: 20px;
+
+    font-size: 12px;
+    letter-spacing: 0.01em;
+}
+.bottom{
+    margin-bottom: 4px;
 }
 .form-feedback textarea{
     padding-top: 12px;
@@ -882,6 +890,34 @@ body{
     border: 1px solid rgba(33, 33, 33, 0.2);
     border-radius: 4px;
     resize: none;
+    cursor: pointer;
+}
+.form-feedback textarea:hover,
+.form-feedback textarea:focus{
+    border: 1px solid var(--acent-color);
+}
+.checkbox{
+    appearance: none;
+    position: absolute;
+}
+.fild{
+    display: inline-block;
+    font-size: 14px;
+}
+.checkbox-icon{
+    display: inline-block;
+    margin-right: 8px;
+    width: 16px;
+    height: 15px;
+    background-image: url(../images/box.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.checkbox:checked ~.checkbox-icon{
+    background-color: var(--acent-color);
+    background-image: url(../images/check.svg);
+    background-size: contain;
+    background-origin: border-box;
 }
 .field-button{
     display: flex;
