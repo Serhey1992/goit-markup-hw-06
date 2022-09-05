@@ -579,6 +579,10 @@ body{
     
     color: #FFFFFF;
 }
+.footer-form{
+    display: flex;
+    align-items: center;
+}
 .footer-input{
     padding-left: 16px;
 
@@ -593,6 +597,7 @@ body{
     display: inline-flex;
     justify-content: center;
     align-items: center;
+    margin-left: 12px;
     
     width: 200px;
     height: 50px;
@@ -836,6 +841,9 @@ body{
     border: 1px solid rgba(33, 33, 33, 0.2);
     border-radius: 4px;
     cursor: pointer;
+    outline: none;
+
+    transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .icon{
     display: inline-flex;
@@ -848,6 +856,8 @@ body{
     height: 18px;
     color: #212121;
     transform: translateY(125%);
+
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .name-icon{
     width: 12px;
@@ -867,8 +877,7 @@ body{
 .form-field input:focus ~ .icon{
     color: var(--acent-color);
 }
-.form-field input:focus,
-.form-field input:hover{
+.form-field input:focus{
     border: 1px solid var(--acent-color);
 }
 .form-feedback{
@@ -891,8 +900,10 @@ body{
     border-radius: 4px;
     resize: none;
     cursor: pointer;
+    outline: none;
+
+    transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.form-feedback textarea:hover,
 .form-feedback textarea:focus{
     border: 1px solid var(--acent-color);
 }
@@ -901,7 +912,9 @@ body{
     position: absolute;
 }
 .fild{
-    display: inline-block;
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
     font-size: 14px;
 }
 .checkbox-icon{
@@ -918,6 +931,7 @@ body{
     background-image: url(../images/check.svg);
     background-size: contain;
     background-origin: border-box;
+    border-radius: 2px;
 }
 .field-button{
     display: flex;
@@ -925,17 +939,17 @@ body{
     align-items: center;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 30px;
     margin-bottom: 40px;
 
     width: 200px;
     height: 50px;
     font-weight: 700;
     font-size: 16px;
-    line-height: 30px;
+    line-height: 1.8;
+    letter-spacing: 0.06em;
     
     color: var(--primary-bcg-color);
-    background: #2196F3;
+    background: var(--acent-color);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
 }
